@@ -1,0 +1,8 @@
+@source "../../node_modules/flowbite";
+@plugin "flowbite/plugin";
+@import "flowbite/src/themes/default";
+@import "tailwindcss";
+body{
+    background-color: azure;
+    
+}
