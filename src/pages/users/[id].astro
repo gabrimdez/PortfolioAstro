@@ -1,4 +1,7 @@
 ---
+// SSG (static) --> no necesito un servidor
+// CSR (client) --> no necesito un servidor
+// SSR (server) --> necesito un servidor que sepa ejecutar nodeJS
 import MiLayout from "../../layouts/MiLayout.astro";
 
 const { id } = Astro.params;
@@ -23,5 +26,5 @@ interface Address {
   <p>Nombre: {user.name}</p>
   <p>Email: {user.email}</p>
   <p>Username: {user.username}</p>
-  <p>Dirección: {user.address.street}</p>
+  <p>Dirección: {user.address?.street}</p>
 </MiLayout>
